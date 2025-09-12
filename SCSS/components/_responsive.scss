@@ -1,0 +1,89 @@
+@media (max-width:426px){
+    .home{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr ;
+        height: 150vh;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    header{
+        padding:2px;
+    }
+    nav ul{
+        gap:4px
+    }
+    header img{
+        width:70px;
+    }
+    
+    .card3{
+        background-position-y:90px ;
+        background-position-x: center;
+        background-size: cover;
+    }
+    .card1{
+        // align-items: start;
+        animation-timeline:view(90% auto) ;
+    }
+        .box .text{
+        // background: rgb(62, 62, 62);
+        padding:0px 64px 0px 0px;
+    }
+    .g{
+        width: 200px;
+    }
+    .img{
+        width:200px;
+    }
+    .img img{
+        width:50px;
+        // display: none;
+    }
+    .g .text h1{
+        font-size: 16px;
+    }
+    .g .text h3{
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width:1024px){
+    .home{
+        // background: #000;
+        padding-top: 160px;
+    }
+    .home .card3{
+        background-position-y: -60px;
+    }
+    .one{
+        margin-left:-70px ;
+        width:500px
+    }
+    .two{
+        width:500px;
+    }
+    .three{
+        width:500px;
+    }
+    .information{
+        overflow-x: scroll;
+    }
+    .get{
+        overflow-x: scroll;
+    }
+    .g{
+        width: 300px;
+    }
+    .img img{
+        width:80px;
+    }
+    .g .text h1{
+        font-size: 24px;
+    }
+    .g .text h3{
+        font-size: 16px;
+    }
+}
