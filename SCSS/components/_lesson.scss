@@ -1,0 +1,88 @@
+#lesson{
+    margin-top: 20px;
+    padding-top:130px;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+}
+.lessons{
+    overflow-x: scroll;
+    height: 1000px;
+    display: flex;
+    cursor: pointer;
+}
+.lessons::-webkit-scrollbar{
+    display: none;
+}
+
+.less h1{
+    height: 50%;
+    align-content: end;
+    text-align: center;
+    font-size: 72px;
+    color: #ffffff00;
+    -webkit-text-stroke: #ffffff 2px;
+    cursor: pointer;
+}
+.less h1:hover{
+    color:white;
+}
+.less a{
+    text-decoration: none;
+    color:#38ccf100
+}
+.less a:hover{
+    color:white;
+}
+.less h3{
+    height: 50%;
+    align-content: end;
+    padding-right:20px;
+    padding-bottom:20px;
+    text-align: end;
+    font-size: 32px;
+    color: #ffffff;
+    // background: #000;
+}
+.less:hover{
+    transform: scale(1.5rem);
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.377) ;
+}
+.lessons .less{
+    transition: 3s both;
+    min-width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 12px;
+    // box-shadow:2px 2px 10px rgba(0, 0, 0, 0.078) ;
+}
+.lessons div:nth-child(1){
+    background: #38ccf1;
+}
+.lessons div:nth-child(2){
+    background: #38f17c;
+}
+.lessons div:nth-child(3){
+    background: #73f138;
+}
+.lessons div:nth-child(4){
+    background: #aaf138;
+}
+.lessons div:nth-child(5){
+    background: #f1c938;
+}
+.lessons div:nth-child(6){
+    background: #f16938;
+}
+.lessons div:nth-child(7){
+    background: #f13873;
+}
+.lessons div:nth-child(8){
+    background: #e538f1;
+}
+.lessons div:nth-child(9){
+    background: #6f38f1;
+}
+.lessons div:nth-child(10){
+    background: #38e2f1;
+}

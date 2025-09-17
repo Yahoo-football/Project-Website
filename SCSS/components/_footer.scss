@@ -31,3 +31,12 @@
 .icon .Link:hover{
     color:#0A66C2fc;
 }
+.tel{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+.tel .call {
+    display: flex;
+    gap:4px;
+}

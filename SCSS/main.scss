@@ -4,6 +4,8 @@
 @import 'components/home';
 @import 'components/footer';
 @import 'components/lesson';
+@import 'components/allpage';
+@import 'components/exam';
 $black:#131313;
 $font: "Nunito", sans-serif;
 $margin:12px;
@@ -41,4 +43,3 @@ $font_hight: "Story Script", sans-serif;
         transform: translateX(0px);
     }
 }
-
