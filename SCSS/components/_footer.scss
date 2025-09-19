@@ -8,26 +8,21 @@ footer{
     flex-direction: column;
     padding-top:150px;
     // padding-bottom:40px;
-    background: rgb(218, 218, 218);
+    // background: rgb(218, 218, 218);
+    background:linear-gradient(to left ,rgb(9, 191, 179),#068ad6 ) ;
     clip-path: polygon(0% 20%,20% 0%, 100% 20%,100% 100%,0% 100%);
     transition: all 10s ease;
     animation: move 10s ;
     animation-timeline: view();
 }
 @keyframes move{
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 0;
-    }
-    30%{
+    25%{
         clip-path: polygon(0% 20%,20% 0%, 100% 20%,100% 100%,0% 100%);
-        opacity: 1;
     }
     60% {
         clip-path: polygon(0% 20%,80% 0%, 100% 20%,100% 100%,0% 100%);
-        background: #54c0ff;
+        // background:linear-gradient(to left ,rgb(9, 191, 179),#068ad6 ) ;
+        
     }
 }
 .down{
@@ -39,6 +34,19 @@ footer{
     gap:0px;
     flex-direction: column;
 }
+.down ul li{
+    list-style-type: none;
+    padding:10px;
+    font-size: 16px;
+}
+.down ul li a:hover{
+    -webkit-text-stroke-color:rgb(255, 255, 255) ;
+    list-style-type: none;
+    color: white;
+}
+.down ul li a:hover::after{
+    background: white;
+}
 .down a{
     color: black;
 }
@@ -49,14 +57,19 @@ footer{
 .down .icon i{
     font-size: 32px;
 }
+.icon i:hover{
+    transform: scale(1.5);
+    transition: 1s ease;
+}
 .icon .Face:hover{
-    color:#1877F2;
+    color:#ffffff;
+
 }
 .icon .Tele:hover{
-    color:#0088cc;
+    color:#ffffff;
 }
 .icon .Link:hover{
-    color:#0A66C2fc;
+    color:#fffffffc;
 }
 .tel{
     display: flex;
