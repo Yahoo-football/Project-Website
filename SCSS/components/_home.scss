@@ -121,7 +121,8 @@ div{
 .information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: #0d0d0d;
+    // background: rgb(28, 55, 91);
+    background: #54c0ff;
     animation: updown both;
     padding:250px 48px 200px 100px;
     animation-timeline: view();
@@ -178,7 +179,8 @@ div{
 
 .get{
     padding-top:16px;
-    background: #111111;
+    // background: rgb(28, 55, 91);
+    background: #54c0ff;
     height: 40vh;
     display: flex;
     justify-content: space-around;

@@ -1,9 +1,35 @@
 .up{
     display: flex;
 }
-
-
-
+footer{
+    height: 80vh;
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    padding-top:150px;
+    // padding-bottom:40px;
+    background: rgb(218, 218, 218);
+    clip-path: polygon(0% 20%,20% 0%, 100% 20%,100% 100%,0% 100%);
+    transition: all 10s ease;
+    animation: move 10s ;
+    animation-timeline: view();
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    30%{
+        clip-path: polygon(0% 20%,20% 0%, 100% 20%,100% 100%,0% 100%);
+        opacity: 1;
+    }
+    60% {
+        clip-path: polygon(0% 20%,80% 0%, 100% 20%,100% 100%,0% 100%);
+        background: #54c0ff;
+    }
+}
 .down{
     display: flex;
     align-items: start;
