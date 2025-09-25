@@ -16,16 +16,11 @@ footer{
     animation-timeline: view();
 }
 @keyframes move{
-    // 0%{
-    //     clip-path: polygon(0% 0%,20% 0%,100% 0%, 100% 100%,0% 100%);
-    // }
     25%{
         clip-path: polygon(0% 20%,20% 0%, 100% 20%,100% 100%,0% 100%);
     }
     60% {
         clip-path: polygon(0% 20%,80% 0%, 100% 20%,100% 100%,0% 100%);
-        // background:linear-gradient(to left ,rgb(9, 191, 179),#068ad6 ) ;
-        
     }
 }
 .down{
@@ -59,6 +54,7 @@ footer{
 }
 .down .icon i{
     font-size: 32px;
+    transition: .8s linear;
 }
 .icon i:hover{
     transform: scale(1.5);
@@ -66,7 +62,6 @@ footer{
 }
 .icon .Face:hover{
     color:#ffffff;
-
 }
 .icon .Tele:hover{
     color:#ffffff;
