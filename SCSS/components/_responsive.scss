@@ -4,17 +4,18 @@
         grid-template-rows: 0.5fr 1fr ;
         height: 150vh;
     }
-    nav a{
-        font-size: 12px;
+    .toggle-btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
     }
-    header{
-        padding:1px;
-    }
-    nav ul{
-        gap:2px;
+    nav{
+        display: none;
     }
     header img{
-        width:50px;
+        width:100px;
     }
     
     .card3{
@@ -22,11 +23,7 @@
         background-position-x: center;
         background-size: cover;
     }
-    .card1{
-        // align-items: start;
-        animation-timeline:view(90% auto) ;
-    }
-        .box .text{
+    .box .text{
         // background: rgb(62, 62, 62);
         padding:0px 64px 0px 0px;
     }
@@ -38,13 +35,22 @@
     }
     .img img{
         width:50px;
-        // display: none;
     }
     .g .text h1{
         font-size: 16px;
     }
     .g .text h3{
         font-size: 10px;
+    }
+    .profile{
+        flex-direction:column-reverse ;
+        height:60vh;
+    }
+    .profile .imagePro{
+        width: 100px;
+    }
+    #exam{
+        height:150vh;
     }
 }
 
@@ -88,5 +94,14 @@
     }
     .g .text h3{
         font-size: 16px;
+    }
+    .profile
+    {
+        // background: #000;
+        height:60vh;
+    }
+    .profile .imagePro{
+        width:200px;
+        height: 60vh;
     }
 }

@@ -1,4 +1,32 @@
 #exam{
-    // background: #f13838;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding:130px 0px 0px 0px;
+    height:130vh;
+}
+#exam h1{
+    height:40px;
+    align-content:end ;
+}
+.Exam .exam .less{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction:column ;
+}
+.Exam .exam .less h1, .exam .less a{
+    margin-top: 40px;
+    transition: 100ms linear;
+    color:rgb(226, 226, 226);      
+}
+.Exam .exam .less h2{
+    padding:4px 8px;
+    transition: 100ms linear;
+    color:white;
+    width:100%;
+}
+.Exam .exam .less h1:hover, .exam .less a:hover{
+     transform: translateY(-20px);
+     transition: 100ms linear;
 }

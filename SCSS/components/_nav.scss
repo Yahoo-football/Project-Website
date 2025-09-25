@@ -23,7 +23,7 @@ header{
     z-index: 100000;
     @include font;
     padding:0px 32px;
-    background:linear-gradient(to left ,rgba(9, 191, 179, 0.797),#068ad6b5 ) ;
+    background:linear-gradient(to right ,rgba(9, 191, 179, 0.64),#068ad6e6 ) ;
     backdrop-filter: blur(1.5px);
     margin:$margin;
     border:solid rgb(55, 54, 54) .1px;

@@ -1,10 +1,11 @@
 .marquee{
     // width: min(1200px, 90vw);
     // margin: auto;
-    height: 300px ;
+    height: 200px ;
+    // background: #000;
 }
 .slider{
-    background:linear-gradient(to right ,rgb(33, 204, 235),#0074b7 ) ;
+    background:linear-gradient(to right ,rgb(9, 191, 179),#0074b7 ) ;
     border:solid ;
     width: 200%;
     height: var(--height);
@@ -19,6 +20,7 @@
 .slider .list{
     display: flex;
     width: 100%;
+    height: 110px;
     min-width: calc(var(--width) * var(--quantity));
     position: relative;
 }
@@ -35,6 +37,9 @@
 }
 .slider .list .item img{
     width: 100%;
+}
+.sc img{
+    height:100px;
 }
 @keyframes autoRun{
     from{
@@ -58,5 +63,70 @@
         left: calc(var(--width) * -1);
     }to{
         left: 100%;
+    }
+}
+
+.profile
+{
+    display: flex;
+    justify-content: space-evenly;
+    // background: #000;
+    width: 100%;
+    height:50vh;
+
+}
+.profile .imagePro{
+    background-size: cover;
+    border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
+    background-image: url(../../photo/cr.jpg);
+    width:300px;
+    height: 48vh;
+    justify-self: center;
+    position: relative;
+    translate: translateX(100px);
+}
+@property --angle{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+.profile .imagePro::after,.profile .imagePro::before{
+    --angle:0deg;
+    content:'';
+    width:100%;
+    height:100%;
+    background: conic-gradient(from var(--angle),#ff0000,#ff7300,#fffb00,#48ff00,rgba(9, 191, 179, 0.64),#068ad6e6,#7a00ff,#ff00c8,#ff0000);
+    border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
+    position: absolute;
+    top: -4px;
+    left:-4px;
+    z-index: -1;
+    animation: --angle  4s ease infinite;
+    padding: 4px;
+}
+.profile .imagePro::before{
+    padding: 4px;
+    opacity: .5px;
+    filter: blur(10px);
+}
+.profile .textProfile{
+    align-self: center ;
+    text-align: center;
+    width:550px;
+}
+@keyframes -move{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes --angle{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
     }
 }
