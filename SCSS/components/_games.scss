@@ -1,0 +1,199 @@
+.games{
+    // background: #000;
+    padding-top:130px;
+    height:100vh;
+    display: flex;  
+    flex-direction: column;
+
+}
+.containGames{
+    display: flex;
+    height: 100vh;
+}
+.containGames div:nth-child(1){
+    background: #35e505;
+}
+.containGames div:nth-child(2){
+    background: #3eb8ff;
+}
+.containGames div:nth-child(3){
+    background: #ff3e3e;
+}
+.easy h1 a{
+    text-decoration: none;
+    color:#82ff5f;
+}
+.easy h1 a:hover{
+    color:#2bbd03;
+}
+.medium h1 a{
+    text-decoration: none;
+    color:#0096ed
+}
+.medium h1 a:hover{
+    color:#0278bc
+}
+.hard h1 a{
+    text-decoration: none;
+    color:#c90101;
+}
+.hard h1 a:hover{
+    color:#ab0000;
+}
+.easy, .medium, .hard{
+    font-size: 48px;
+    height: 320px;
+    min-width:340px;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.easy{
+    position: relative;
+    transition: 2s all;
+}
+.easy::after{
+    display: none;
+    font-size: 100px;
+    content: '🥉';
+    position: absolute;
+    right:0;
+    bottom: 0;
+    animation: moveUp ease 2s;
+    transition: 2s all;
+}
+.easy::before{
+    display: none;
+    font-size: 80px;
+    content: '🎮';
+    position: absolute;
+    left:0;
+    top: 0;
+    animation: moveDown ease 2s;
+    transition: 2s all;
+}
+.easy:hover::after,.easy:hover::before{
+    display: block;
+    transition: 2s all;
+}
+@keyframes moveUp{
+    from {
+        transform: translateY(-80px) rotate(90deg);
+        opacity: 0;
+        font-size: 50px;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes moveDown{
+    from {
+        transform: translateY(80px) rotateX(90deg);
+        opacity: 0;
+        font-size: 50px;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.medium{
+    position: relative;
+    transition: 2s all;
+}
+.medium::after{
+    display: none;
+    font-size: 100px;
+    content: '🥈';
+    position: absolute;
+    right:0;
+    bottom: 0;
+    animation: moveLeft ease 2s;
+    transition: 2s all;
+}
+.medium::before{
+    display: none;
+    font-size: 80px;
+    content: '🕹️';
+    position: absolute;
+    left:0;
+    top: 0;
+    animation: moveRight ease 2s;
+    transition: 2s all;
+}
+.medium:hover::after,.medium:hover::before{
+    display: block;
+    transition: 2s all;
+}
+@keyframes moveLeft{
+    from {
+        transform: translateX(-80px) rotate(360deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes moveRight{
+    from {
+        transform: translateX(80px) rotateX(90deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.hard{
+    position: relative;
+    transition: 2s all;
+}
+.hard::after{
+    display: none;
+    font-size: 100px;
+    content: '🥇';
+    position: absolute;
+    right:0;
+    bottom: 0;
+    animation: scale ease 2s;
+    transition: 2s all;
+}
+.hard::before{
+    display: none;
+    font-size: 80px;
+    content: '🧠';
+    position: absolute;
+    left:0;
+    top: 0;
+    animation: moveRight ease 2s;
+    transition: 2s all;
+}
+.hard:hover::after,.hard:hover::before{
+    display: block;
+    transition: 2s all;
+}
+@keyframes scale{
+    from {
+        font-size: 0px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes moveRight{
+    from {
+        transform: translateX(80px) rotateX(90deg);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
