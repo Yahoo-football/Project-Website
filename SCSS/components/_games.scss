@@ -1,16 +1,15 @@
 .games{
     // background: #000;
     padding-top:130px;
-    height:100vh;
+    height:101vh;
     display: flex;  
     flex-direction: column;
 
 }
 .containGames{
     display: flex;
-    height: 100vh;
-    padding-top: 50px;
-    
+    height: 90vh;
+    padding-top: 50px;    
 }
 .containGames div:nth-child(1){
     background: #35e505;
