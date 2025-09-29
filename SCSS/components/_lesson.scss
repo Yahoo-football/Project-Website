@@ -45,18 +45,20 @@
     // background: #000;
 }
 .less:hover{
-    transform: scale(1.5rem);
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.394) ;
+    scale:.95;
+    transition: 1s all;
+    box-shadow:4px 4px 3px rgba(0, 0, 0, 0.507)!important ;
 }
 .lessons .less{
-    // transition: 3s both;
+    box-shadow:4px 4px 10px rgba(0, 0, 0, 0.692) ;
+    transition: 1s all;
     min-width: 350px;
     min-height: 280px;
     margin: 20px;
     border-radius: 12px;
     animation: up both;
     // animation-timeline: view(50% 0%);
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.236) ;
+    // box-shadow:2px 2px 5px rgba(0, 0, 0, 0.236) ;
 }
 .lessons div:nth-child(even){
     background: #068ad6;

@@ -1,0 +1,32 @@
+.qoute{
+    display: flex;
+    height:80vh;
+    flex-direction: column;
+    gap:48px;
+    background: rgb(118, 118, 118);
+}
+.qoute h1:nth-child(1){
+}
+.qoute h1:nth-child(2){
+}
+.qoute h1:nth-child(3){
+}
+.qoute h1:nth-child(4){
+}
+.qoute h1:nth-child(5){
+}
+.qoute h1{
+    font-size:64px ;
+    text-align: center;
+    height:50px;
+    animation : blur linear both;
+    animation-timeline: view(50% auto);
+}
+@keyframes blur{
+    0%{
+        filter:blur(20px);
+    }
+    40%,60%{
+        filter:blur(0px);
+    }
+}
