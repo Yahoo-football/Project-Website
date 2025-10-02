@@ -21,7 +21,6 @@
         background-size: cover;
     }
     .box .text{
-        // background: rgb(62, 62, 62);
         padding:0px 64px 0px 0px;
     }
     .profile{
@@ -124,11 +123,22 @@ footer{
 .games div:nth-child(3){
     margin-right: 20px !important;
 }
+.qoute h1{
+    font-size: 34px !important  ;
+    height:50px;
+}
 }
 
-
+@media (max-width:376px){
+    .less{
+        width:150px !important;
+    }
+}
 
 @media (max-width:1024px){
+    .qoute{
+    margin-top:100px ;
+    }
     .containGames{
         overflow-x:scroll ;
     }
@@ -174,7 +184,6 @@ footer{
     }
     .profile
     {
-        // background: #000;
         height:60vh;
     }
     .profile .imagePro{
